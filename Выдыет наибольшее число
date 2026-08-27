@@ -1,0 +1,7 @@
+a = input("Введите число: ")
+b = input("Введите другое число: ")
+
+if a > b:
+    print(a)
+else:
+    print(b)
