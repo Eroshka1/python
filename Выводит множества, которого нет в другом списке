@@ -1,0 +1,8 @@
+list1 = {10, 20, 30, 40, 50}
+list2 = {20, 25, 30, 35, 40}
+
+list3 = list1 - list2
+print(list3)
+
+list4 = list1.difference(list2)
+print(list4)
