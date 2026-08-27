@@ -1,0 +1,23 @@
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+
+    def add(self, amount):
+        self.balance += amount  # ← вот это было пропущено
+        print(f"Добавлено {amount}. Баланс: {self.balance}")
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print(f"Снято {amount}. Остаток: {self.balance}")
+        else:
+            print("Ошибка: недостаточно средств!")
+
+# Создаем объект
+account = BankAccount("12345", 1000)
+
+# Проверяем
+account.add(500)        # Добавлено 500. Баланс: 1500
+account.withdraw(200)   # Снято 200. Остаток: 1300
+account.withdraw(2000)  # Ошибка: недостаточно средств!
