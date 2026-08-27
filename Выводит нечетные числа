@@ -1,0 +1,5 @@
+numbers = [11, 22, 33, 44, 55]
+
+result = filter(lambda n: n % 2 != 0, numbers)
+for n in result:
+    print(n, end=" ")
